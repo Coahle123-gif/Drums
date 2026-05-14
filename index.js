@@ -59,3 +59,8 @@ function makesound(key) {
 
         default: console.log(key);
     }}
+
+    function buttonAnimation(currentKey) {
+      var activeButton = document.querySelector("." + currentKey);
+      activeButton.classList.add("pressed");
+    }
